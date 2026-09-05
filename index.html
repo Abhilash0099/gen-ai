@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abhilash Guntuka — Senior Associate DevOps Engineer">
+<title>Abhilash Guntuka | Senior Associate DevOps Engineer</title>
+<style>
+:root{
+ --bg:#020812;--bg2:#061321;--card:#0b1b2e;--card2:#0e243c;
+ --text:#f5f8ff;--muted:#9caec4;--blue:#3f9cff;--cyan:#43e4ff;
+ --purple:#8d64ff;--green:#67ffa4;--orange:#ffab24;--line:rgba(100,154,208,.22);
+ --max:1220px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:75px}
+body{
+ font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+ color:var(--text);background:
+ radial-gradient(circle at 72% 8%,rgba(27,105,220,.24),transparent 32rem),
+ radial-gradient(circle at 90% 80%,rgba(115,55,255,.13),transparent 28rem),var(--bg);
+ overflow-x:hidden;line-height:1.55
+}
+body:before{
+ content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;
+ background-image:linear-gradient(rgba(74,138,202,.065) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(74,138,202,.065) 1px,transparent 1px);
+ background-size:44px 44px;mask-image:linear-gradient(#000,transparent 90%)
+}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}
+nav{height:66px;position:sticky;top:0;z-index:100;background:rgba(2,8,17,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(86,142,198,.16)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1rem}.mark{font-weight:950;color:#4aa2ff;font-size:1.55rem;letter-spacing:-.1em}
+.navlinks{display:flex;gap:25px;font-size:.78rem;color:#d0dae6}.navlinks a{height:66px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:.2s}.navlinks a:hover,.navlinks a.active{color:#58a9ff;border-color:#4e92ff}
+.connect{font-size:.72rem;font-weight:800;padding:10px 15px;border-radius:7px;background:linear-gradient(135deg,#147aff,#7156ff);box-shadow:0 9px 25px rgba(38,104,255,.28)}
+.menu{display:none;background:none;color:#fff;border:1px solid var(--line);border-radius:7px;padding:7px 10px}
+
+.hero{min-height:540px;display:grid;grid-template-columns:44% 56%;align-items:center;padding:48px 0 35px;position:relative}
+.hero-copy{z-index:5}.pill{display:inline-flex;align-items:center;gap:7px;color:#73dcff;border:1px solid rgba(67,228,255,.4);background:rgba(50,180,255,.05);border-radius:999px;padding:7px 11px;font-size:.65rem;font-weight:750}.pill i{width:6px;height:6px;background:var(--green);border-radius:50%;box-shadow:0 0 13px var(--green)}
+h1{font-size:clamp(3.2rem,6vw,5.7rem);line-height:.9;letter-spacing:-.065em;margin:22px 0}.gradient{background:linear-gradient(100deg,#fff 14%,#57aaff 58%,#9068ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-copy>p{font-size:.84rem;color:#bcc9d9;max-width:515px;line-height:1.75}.actions{display:flex;gap:11px;margin-top:25px;flex-wrap:wrap}.btn{border:1px solid #3b526c;border-radius:7px;padding:10px 16px;font-size:.7rem;font-weight:800;transition:.25s}.btn:hover{transform:translateY(-2px);border-color:#579dff}.primary{border:0;background:linear-gradient(135deg,#187cff,#6c50ff);box-shadow:0 10px 25px rgba(37,103,255,.22)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);margin-top:28px;max-width:570px}.metric{padding-right:15px;margin-right:15px;border-right:1px solid var(--line)}.metric:last-child{border:0}.metric strong{font-size:1.25rem}.metric span{display:block;color:#8498b0;font-size:.58rem;margin-top:2px}
+
+.visual{height:500px;position:relative}.glow{position:absolute;width:600px;height:430px;right:-40px;top:20px;background:radial-gradient(circle,rgba(41,132,255,.32),transparent 65%);filter:blur(12px)}
+.cloud{position:absolute;top:60px;left:50%;transform:translateX(-50%);width:400px;height:165px;border-radius:55% 55% 45% 45%;background:radial-gradient(circle at 40% 25%,#f2fbff 0,#a8ddff 12%,#4d7ec2 42%,#0a2147 75%);box-shadow:0 0 38px rgba(87,175,255,.38)}
+.cloud:before,.cloud:after{content:"";position:absolute;border-radius:50%;background:inherit}.cloud:before{width:165px;height:150px;left:42px;top:-51px}.cloud:after{width:190px;height:174px;right:45px;top:-69px}
+.aws{position:absolute;z-index:2;top:25px;left:0;right:0;text-align:center;font-size:4rem;font-weight:850;letter-spacing:-.08em;text-shadow:0 0 25px rgba(255,255,255,.35)}.aws small{display:block;color:#ffae23;font-size:1.35rem;margin-top:-16px}
+.service{position:absolute;z-index:10;border:1px solid var(--line);background:rgba(5,17,30,.91);backdrop-filter:blur(8px);border-radius:7px;padding:8px 11px;font-size:.62rem;box-shadow:0 14px 30px rgba(0,0,0,.36)}.service b{font-weight:500;color:#a6b6c9}.s3{top:76px;left:3%}.ecr{top:92px;right:1%}.rds{top:160px;left:0}.cw{top:195px;right:0}
+.stack{position:absolute;z-index:4;right:9%;top:220px;width:305px}.stack .layer{height:55px;margin-top:-7px;border:1px solid #355b7f;border-radius:6px;background:linear-gradient(135deg,#173c60,#08192a);display:flex;align-items:center;justify-content:center;font-weight:850;font-size:1.05rem;box-shadow:0 15px 28px rgba(0,0,0,.38)}
+.terminal{position:absolute;z-index:15;left:6%;bottom:12px;width:390px;background:#02060b;border:1px solid #36495f;border-radius:10px;padding:14px 17px;box-shadow:0 28px 55px rgba(0,0,0,.5)}.termhead{font:9px monospace;color:#62758b;margin-bottom:8px}.termhead i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#5a6b7e;margin-right:4px}.terminal pre{font:10px/1.8 monospace;color:#d4dfec}.green{color:#6dff9f}.cyan{color:#68c8ff}
+
+section{padding:55px 0;border-top:1px solid rgba(83,135,185,.13)}.kicker{font-size:.6rem;color:#4baaff;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.title{font-size:1.6rem;letter-spacing:-.035em;margin:4px 0}.sub{font-size:.71rem;color:#879ab1;margin-bottom:22px}
+.grid{display:grid;gap:11px}.skills{grid-template-columns:repeat(6,1fr)}.card{border:1px solid var(--line);border-radius:7px;background:linear-gradient(145deg,rgba(14,31,51,.84),rgba(6,16,28,.84));padding:15px;box-shadow:0 12px 34px rgba(0,0,0,.14);transition:.25s}.card:hover{transform:translateY(-3px);border-color:rgba(79,161,255,.43)}
+.card h3{font-size:.73rem;margin-bottom:7px}.card p{font-size:.61rem;color:#99aabe;line-height:1.65}.icon{font-size:1rem;margin-bottom:8px}.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}.tag{font-size:.53rem;color:#b7d6f1;border:1px solid rgba(94,145,194,.22);padding:3px 5px;border-radius:4px}
+.experience{display:grid;grid-template-columns:1fr 1.35fr;gap:20px}.timeline{position:relative;padding-left:23px}.timeline:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:#315572}.job{position:relative;margin-bottom:11px}.job:before{content:"";position:absolute;left:-22px;top:20px;width:7px;height:7px;border:2px solid #07111c;border-radius:50%;background:#5b9cff;box-shadow:0 0 12px #5797ff}.job small{font-size:.57rem;color:#5bb2ff}
+.projects{grid-template-columns:repeat(4,1fr)}.project{min-height:210px;display:flex;flex-direction:column}.project-no{font:600 .55rem monospace;color:#59728e;margin-bottom:22px}.project h3{font-size:.8rem}.project .tags{margin-top:auto}.project-link{color:#54adff;font-size:.59rem;margin-top:13px}
+.certs{grid-template-columns:repeat(5,1fr)}.cert{text-align:center;min-height:115px}.cert-logo{font-size:1.45rem;margin-bottom:8px}.cert h3{font-size:.66rem}.cert p{font-size:.56rem}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:11px}.contact-main{padding:26px}.contact-main h2{font-size:1.75rem;line-height:1.1;margin-top:5px}.contact-main p{font-size:.67rem;color:#92a5bb;margin-top:7px}.contact-list{display:grid;gap:9px}.contact-item{display:flex;justify-content:space-between;align-items:center}.contact-item span{font-size:.57rem;color:#8497ad}.contact-item a{font-size:.6rem;color:#59b0ff;text-align:right}
+footer{border-top:1px solid rgba(83,135,185,.13);padding:23px;text-align:center;color:#60758d;font-size:.6rem}
+
+.reveal{opacity:0;transform:translateY(14px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:1050px){.skills{grid-template-columns:repeat(3,1fr)}.projects{grid-template-columns:repeat(2,1fr)}.certs{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:800px){.navlinks{display:none;position:absolute;top:66px;left:4%;right:4%;padding:8px;background:#07111f;border:1px solid var(--line);border-radius:9px;flex-direction:column}.navlinks.open{display:flex}.navlinks a{height:auto;padding:10px}.connect{display:none}.menu{display:block}.hero{grid-template-columns:1fr}.visual{margin-top:10px}.experience,.contact{grid-template-columns:1fr}}
+@media(max-width:600px){.skills,.projects,.certs{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:1fr 1fr;gap:10px}.metric{border:0;margin:0}.visual{height:400px}.cloud{width:290px}.stack{width:215px;right:1%}.terminal{width:86%;left:1%}.service{display:none}}
+@media(max-width:430px){.skills,.projects,.certs{grid-template-columns:1fr}.hero{padding-top:38px}h1{font-size:3.4rem}.cloud{width:260px}.stack{width:190px}.terminal{width:95%}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+<a href="#home" class="brand"><span class="mark">AＧ</span><span>Abhilash <b>Guntuka</b></span></a>
+<div class="navlinks" id="navlinks"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></div>
+<a class="connect" href="#contact">✈ Let's Connect ↗</a><button class="menu" id="menu">☰</button>
+</div></nav>
+
+<header class="wrap hero" id="home">
+<div class="hero-copy reveal">
+<div class="pill"><i></i> Senior Associate DevOps Engineer</div>
+<h1>Abhilash<br><span class="gradient">Guntuka</span></h1>
+<p>DevOps Engineer with 5+ years of experience designing, automating and optimizing cloud infrastructure on AWS. Passionate about CI/CD, automation, and building scalable, secure and cost-efficient solutions.</p>
+<div class="actions"><a class="btn primary" href="#contact">✈ Let's Connect ↗</a><a class="btn" href="Abhilash_Resume.pdf" download>Download Resume ↓</a></div>
+<div class="metrics"><div class="metric"><strong>5+</strong><span>Years Experience</span></div><div class="metric"><strong>20+</strong><span>Projects Delivered</span></div><div class="metric"><strong>10+</strong><span>AWS Services</span></div><div class="metric"><strong>100%</strong><span>Commitment</span></div></div>
+</div>
+<div class="visual reveal"><div class="glow"></div><div class="cloud"><div class="aws">aws<small>⌁</small></div></div>
+<div class="service s3">🪣 S3<br><b>Storage</b></div><div class="service ecr">⬡ ECR<br><b>Registry</b></div><div class="service rds">▣ RDS<br><b>Database</b></div><div class="service cw">◉ CloudWatch<br><b>Monitoring</b></div>
+<div class="stack"><div class="layer">🐳 Docker</div><div class="layer">🐳 Containers</div><div class="layer">☸ Kubernetes</div></div>
+<div class="terminal"><div class="termhead"><i></i><i></i><i></i>&nbsp; abhilash@devops:~</div><pre><span class="green">$ whoami</span>
+<span class="cyan">› DevOps Engineer</span>
+
+<span class="green">$ cat skills.txt</span>
+<span class="cyan">› Automate Everything. Monitor Everything.</span>
+<span class="cyan">  Optimize Always.</span>
+
+<span class="green">$</span> <span class="cyan">_</span></pre></div>
+</div>
+</header>
+
+<section id="about"><div class="wrap reveal"><div class="kicker">About</div><h2 class="title">Engineering with reliability in mind.</h2><p class="sub">Cloud infrastructure, automation and production operations across the software development lifecycle.</p><div class="card"><p>I'm Abhilash Guntuka, a Senior Associate DevOps Engineer with 5 years of experience. My work includes AWS infrastructure provisioning, CI/CD automation, production monitoring, go-lives, release discussions and operational troubleshooting.</p></div></div></section>
+
+<section id="skills"><div class="wrap reveal"><div class="kicker">Skills & Expertise</div><h2 class="title">Technologies I work with</h2><p class="sub">Cloud, automation, containers, observability, infrastructure as code and security.</p>
+<div class="grid skills">
+<div class="card"><div class="icon">☁️</div><h3>Cloud & AWS</h3><p>EC2, S3, VPC, IAM, RDS, ECR, ECS and core AWS services.</p><div class="tags"><span class="tag">EC2</span><span class="tag">S3</span><span class="tag">RDS</span><span class="tag">IAM</span></div></div>
+<div class="card"><div class="icon">⚙️</div><h3>CI/CD & Automation</h3><p>Jenkins, GitHub Actions, Bamboo, Git and automated deployments.</p><div class="tags"><span class="tag">Jenkins</span><span class="tag">GitHub</span><span class="tag">Bamboo</span></div></div>
+<div class="card"><div class="icon">🐳</div><h3>Containers & Orchestration</h3><p>Docker, Kubernetes and ECS Fargate workloads.</p><div class="tags"><span class="tag">Docker</span><span class="tag">K8s</span><span class="tag">ECS</span></div></div>
+<div class="card"><div class="icon">📊</div><h3>Monitoring & Observability</h3><p>CloudWatch, New Relic, Splunk, Datadog and Honeycomb OTEL.</p><div class="tags"><span class="tag">CloudWatch</span><span class="tag">Datadog</span></div></div>
+<div class="card"><div class="icon">🏗️</div><h3>Infrastructure as Code</h3><p>Terraform, Ansible, shell scripting and YAML automation.</p><div class="tags"><span class="tag">Terraform</span><span class="tag">Ansible</span></div></div>
+<div class="card"><div class="icon">🔐</div><h3>Security & Operations</h3><p>IAM, Trusted Advisor, security reviews and cost optimization.</p><div class="tags"><span class="tag">IAM</span><span class="tag">Security</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap reveal"><div class="kicker">Experience</div><h2 class="title">My Professional Journey</h2><p class="sub">Hands-on DevOps engineering across cloud infrastructure and production environments.</p>
+<div class="experience"><div class="card"><h3>Senior Associate Engineer · Majesco</h3><small>Present</small><p>Working on cloud automation, CI/CD pipelines, infrastructure as code and monitoring solutions using AWS native services.</p><div class="tags"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">Kubernetes</span><span class="tag">Jenkins</span></div></div>
+<div class="timeline"><div class="card job"><small>Present</small><h3>Senior Associate Engineer · Majesco</h3><p>Supporting insurance, investment and retirement technology products with cloud automation, monitoring, go-lives and release discussions.</p></div><div class="card job"><small>5 years</small><h3>AWS DevOps Analyst · Vitech Systems Asia Pvt. Ltd.</h3><p>Provisioned EC2/RDS environments, created CI/CD automation and worked with Ansible, Terraform, Docker, Kubernetes and production monitoring.</p></div></div></div></div></section>
+
+<section id="projects"><div class="wrap reveal"><div class="kicker">Featured Projects</div><h2 class="title">Projects That Make an Impact</h2><p class="sub">Selected areas of hands-on responsibility.</p>
+<div class="grid projects"><div class="card project"><div class="project-no">01 / AUTOMATION</div><h3>CI/CD Automation</h3><p>Designed and implemented automated CI/CD pipelines using Jenkins, GitHub and Ansible.</p><div class="tags"><span class="tag">Jenkins</span><span class="tag">GitHub</span><span class="tag">Ansible</span></div><a class="project-link" href="#contact">View Details →</a></div>
+<div class="card project"><div class="project-no">02 / CLOUD</div><h3>AWS Infrastructure</h3><p>Provisioned scalable AWS environments including EC2, RDS, EBS, load balancers and Auto Scaling.</p><div class="tags"><span class="tag">AWS</span><span class="tag">Terraform</span><span class="tag">RDS</span></div><a class="project-link" href="#contact">View Details →</a></div>
+<div class="card project"><div class="project-no">03 / OBSERVABILITY</div><h3>Production Monitoring</h3><p>Implemented monitoring rules, alerts and custom metrics using CloudWatch and observability tools.</p><div class="tags"><span class="tag">CloudWatch</span><span class="tag">Datadog</span><span class="tag">Splunk</span></div><a class="project-link" href="#contact">View Details →</a></div>
+<div class="card project"><div class="project-no">04 / OPTIMIZATION</div><h3>Cloud Cost & Security</h3><p>Used AWS Trusted Advisor for recurring security and cost-optimization reviews.</p><div class="tags"><span class="tag">Security</span><span class="tag">Cost</span><span class="tag">AWS</span></div><a class="project-link" href="#contact">View Details →</a></div></div></div></section>
+
+<section id="certifications"><div class="wrap reveal"><div class="kicker">Certifications</div><h2 class="title">Continuous Learner</h2><p class="sub">Certifications and current learning.</p><div class="grid certs"><div class="card cert"><div class="cert-logo">🏅</div><h3>AWS Certified Cloud Practitioner</h3><p>AWS</p></div><div class="card cert"><div class="cert-logo">☁️</div><h3>AWS Solutions Architect – Associate</h3><p>AWS</p></div><div class="card cert"><div class="cert-logo">⌘</div><h3>Git Certification</h3><p>Version Control</p></div><div class="card cert"><div class="cert-logo">☸</div><h3>Kubernetes Certification</h3><p>Currently Pursuing</p></div><div class="card cert"><div class="cert-logo">🚀</div><h3>DevOps Learning</h3><p>Continuous Development</p></div></div></div></section>
+
+<section id="contact"><div class="wrap reveal"><div class="contact"><div class="card contact-main"><div class="kicker">Let's Connect</div><h2>Let's Build Something Great Together!</h2><p>I'm always open to discussing new opportunities, interesting projects or just having a chat about DevOps and Cloud.</p><div class="actions"><a class="btn primary" href="mailto:abhilashguntuka00@gmail.com">Email Me ↗</a><a class="btn" href="https://www.linkedin.com/in/abhilash-guntuka-09824b210" target="_blank" rel="noopener">LinkedIn ↗</a></div></div><div class="contact-list"><div class="card contact-item"><div><b>Email</b><br><span>Direct contact</span></div><a href="mailto:abhilashguntuka00@gmail.com">abhilashguntuka00@gmail.com</a></div><div class="card contact-item"><div><b>Location</b><br><span>India</span></div><span>Hyderabad</span></div><div class="card contact-item"><div><b>Connect</b><br><span>Professional network</span></div><a href="https://www.linkedin.com/in/abhilash-guntuka-09824b210" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></div></section>
+<footer>© 2026 Abhilash Guntuka · Senior Associate DevOps Engineer</footer>
+
+<script>
+const links=document.getElementById('navlinks');
+document.getElementById('menu').onclick=()=>links.classList.toggle('open');
+links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+
+const reveal=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>reveal.observe(e));
+
+const nav=[...document.querySelectorAll('.navlinks a')];
+const sections=[...document.querySelectorAll('header[id],section[id]')];
+const active=new IntersectionObserver(entries=>{
+ entries.forEach(e=>{
+  if(e.isIntersecting) nav.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
+ });
+},{rootMargin:'-40% 0px -50% 0px'});
+sections.forEach(s=>active.observe(s));
+</script>
+</body>
+</html>
